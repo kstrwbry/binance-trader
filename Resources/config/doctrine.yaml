@@ -1,0 +1,4 @@
+doctrine:
+    dbal:
+        types:
+            signal: App\Type\SignalType
