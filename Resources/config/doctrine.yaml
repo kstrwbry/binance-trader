@@ -1,4 +1,4 @@
 doctrine:
     dbal:
         types:
-            signal: App\Type\SignalType
+            signal: Kstrwbry\BinanceTrader\Type\SignalType

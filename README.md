@@ -33,8 +33,8 @@ designed to automate your crypto strategies. configure your strategies and monit
       dbal:
         orm:
             resolve_target_entities:
-              App\Interface\KlineInterface: App\Entity\Kline
-              App\Interface\KlineRawInterface: App\Entity\KlineRaw
+              Kstrwbry\BinanceTrader\Interface\KlineInterface: App\Entity\Kline
+              Kstrwbry\BinanceTrader\Interface\KlineRawInterface: App\Entity\KlineRaw
     ```
 ### Indicator Entities
 Implement interface for each of the following indicators or extend `EntityBase`s.  
@@ -50,9 +50,9 @@ If you choose `EntityBase`, the indicators will have automatically a `@ORM\OneTo
 Fetch data from database or define your own `ArrayCollection` and push them into an indicator calculation class:
 ```php
 use Doctrine\Common\Collections\ArrayCollection;
-use App\Indicator\RVI as RVICalculator;
-use App\Entity\RVI as RVIEntity;
-use App\Interface\RVIInterface;
+use Kstrwbry\BinanceTrader\Indicator\RVI as RVICalculator;
+use Kstrwbry\BinanceTrader\Entity\RVI as RVIEntity;
+use Kstrwbry\BinanceTrader\Interface\RVIInterface;
 use Doctrine\ORM\EntityManagerInterface;
 
 /** @var RVIInterface[] $entities */
