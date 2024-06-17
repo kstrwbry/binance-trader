@@ -1,7 +1,7 @@
-doctrine:
-    dbal:
-        types:
-            signal: Kstrwbry\BinanceTrader\Type\SignalType
+#doctrine:
+#    dbal:
+#        types:
+#            signal: Kstrwbry\BinanceTrader\Type\SignalType
 #    orm:
 #        resolve_target_entities:
 #            Kstrwbry\BinanceTrader\Interface\KlineInterface: App\Entity\Kline
